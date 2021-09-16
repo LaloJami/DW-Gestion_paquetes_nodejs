@@ -139,5 +139,29 @@ Para solucionar las vulnerabilidades que tengamos en nuestro proyecto. Básicame
 ## Probar nuestros paquetes de npm localmente
 Ya debemos tener todo el proyecto configurado, para luego ejecutar los siguientes comandos:
 ```
-$ npm install <pkg> -O
+$ npm link
 ```
+Esto nos creara un enlace simbólico en la carpeta global (`.npm-global`) que se vincula al paquete o proyecto donde se ejecuto el comando. El nombre de este enlace simbólico se toma el campo "name" del package.json. Lo recomendado es que el valor de "name" inicie con una @.
+eje: "name": "@boogst/``<project-name>``"
+```
+$ npm link "@boogst/<project-name>"
+```
+Si queremos usar el paquete anterior en algún proyecto debemos referenciarlo con este comando. Recuerda que debes estar ubicado en el proyecto "nuevo" donde quieres implementar este paquete.
+## Publicar nuestro paquete
+```
+$ npm adduser
+```
+Para agregar un usuario de NPM
+```
+$ npm login
+```
+Para iniciar sección a un usuario
+```
+$ npm publish
+```
+Para publicar mi proyecto a NPM. Recuerda que debes estar ubicado en la raíz de tu proyecto
+```
+$ npm unpublish -f
+```
+Nos permite actualizar la versión de nuestro proyecto o paquete 
+
