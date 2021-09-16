@@ -94,11 +94,12 @@ $ npm uninstall <pkg>
 ```
 Para desinstalar o eliminar un paquete en especifico. Esto lo elimina del package.json y node_moduls
 ```
-$ npm install <pkg> --no-save
+$ npm uninstall <pkg> --no-save
 ```
 Nos permite desinstalar o eliminar un paquete, pero sin eliminarlo del package.json pero si del node_moduls
 
 ## Simbolos ^ y ~
+![](https://static.platzi.com/media/user_upload/wheelbarrel-no-tilde-caret-white-bg-w1000-72ca1a72-4c7f-4abe-8482-425c01a72f89.jpg)
 ```
 $ npm install <pkg> --sabe-exact | npm install <pkg> -E
 ```
@@ -109,6 +110,10 @@ Para instalar la dependencia en su version exacta
 $ npm run <script-name>
 ```
 Podemos ejecutar nuestros propios scripts con este comando.
+
+**Los scripts NPM**: Son comandos que podemos establecer para poder ejecutar desde la consola. Estos nos van a dar una serie de salidas según sea el caso.
+
+Podemos crear la cantidad de scripts que necesitemos. Estos scripts van a poder correr de forma nativa dentro de nuestra terminal.
 ## Solución de problemas
 
 Uno de los problemas que podemos toparnos en la construccion de nuestros proyectos, trabajando con un equipo, es que nuestros archivos de node_moduls no estén correctamente instalados o tengamos una versión anterior.
@@ -123,6 +128,17 @@ elimina la cache
 $ npm cache verify
 ```
 con esto vamos a poder ver si ya la cache ha sido eliminada y que todas las instalaciones de nuestros recursos van a ir hacia los servidores de NPM
+### Forma de borrar de forma segura la carpeta node_modules
+Instalamos el paquete rimraf
+```
+$ npm install -g rimraf
+```
+Ejecutamos el comando
+```
+$ rimraf node_modules/
+```
+el comando rimraf debe ser usado dentro del directorio de tu proyecto
+### Vulnerabilidades
 ```
 $ npm audit
 ```
