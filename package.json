@@ -12,5 +12,15 @@
     "package"
   ],
   "author": "Lalo Jami <eduardolalojami@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "date-fns": "^2.23.0",
+    "webpack": "^5.53.0"
+  },
+  "optionalDependencies": {
+    "eslint": "^7.32.0"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }

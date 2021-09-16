@@ -165,3 +165,6 @@ $ npm unpublish -f
 ```
 Nos permite actualizar la versión de nuestro proyecto o paquete 
 
+
+## Teminologías
+Demonio (demon): Servicio que corre en segundo plano en el sistema
