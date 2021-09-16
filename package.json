@@ -1,0 +1,16 @@
+{
+  "name": "gestiondependenciasnpm",
+  "version": "1.0.0",
+  "description": "Construir un paquete para node",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "node",
+    "package"
+  ],
+  "author": "Lalo Jami <eduardolalojami@gmail.com>",
+  "license": "MIT"
+}
