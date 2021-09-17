@@ -13,6 +13,10 @@
   ],
   "author": "Lalo Jami <eduardolalojami@gmail.com>",
   "license": "MIT",
+  "bin":{
+    "random-lalo-msg": "./bin/global.js"
+  },
+  "preferGlobal": true,
   "devDependencies": {
     "date-fns": "^2.23.0",
     "webpack": "^5.53.0"
